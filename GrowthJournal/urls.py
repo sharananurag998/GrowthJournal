@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.conf.urls import url 
+from django.views.generic.base import RedirectView
+
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -23,7 +26,8 @@ from GrowthJournal.views import PostFeed
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', PostFeed.as_view(template_name="index.html"), name = "PostFeed")
+    path('', PostFeed.as_view(template_name="index.html"), name = "PostFeed"),
+    url(r'^favicon\.ico$',RedirectView.as_view(url='/static/images/favicon.ico')),
 ]   
 
 if settings.DEBUG:
