@@ -26,6 +26,7 @@ from GrowthJournal.views import PostFeed
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('cal/', PostFeed.as_view(template_name="calendar.html"), name = "PostFeed"), 
     path('', PostFeed.as_view(template_name="index.html"), name = "PostFeed"),
     url(r'^favicon\.ico$',RedirectView.as_view(url='/static/images/favicon.ico')),
 ]   
