@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 let today = new Date();
 let currentMonth = today.getMonth();
 let currentYear = today.getFullYear();
@@ -9,7 +10,6 @@ let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oc
 
 let monthAndYear = document.getElementById("monthAndYear");
 showCalendar(currentMonth, currentYear);
-});
 
 function next() {
     currentYear = (currentMonth === 11) ? currentYear + 1 : currentYear;
@@ -80,3 +80,4 @@ function showCalendar(month, year) {
     }
 
 }
+});
