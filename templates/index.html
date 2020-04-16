@@ -2,23 +2,26 @@
 
 {% block content %}
     <div class="row">
-        <div class="col s12 l4">
+        <div class="col s12 m12 l4">
             <h3 style="text-align: center;">{% now "(D) jS F, Y" %}</h3>
         </div>
 
-        <div class="col s12 l4"></div>
-
-        <div class="col s12 l4">
+        <div class="col s12 m12 l4">
+        </div>
+        
+        <div class="col m12 s12 l4">
             <center>
-                <a class="waves-effect waves-light btn-large" style="margin-top: 5%;">Prev</a>
-                <a class="waves-effect waves-light btn-large" style="margin-top: 5%;">Next</a>
+                <a class="waves-effect waves-light btn-large" style="margin-top:6%">Prev</a>
+                <a class="waves-effect waves-light btn-large" style="margin-top:6%">Next</a>
             </center>
         </div>
     </div>
     
-    <div class="row" style="margin:2%">
+
+    <div class="row">
         <!-- todo-->
-            <div class="content-card col s12 l4">
+        <div class="col m12 s12 l4">
+            <div class="card hoverable">
                 <div class="card-top">
                     <div class="content-card-header">
                         <input class="list-title" value="To Do" readonly></input>
@@ -31,38 +34,39 @@
                     <input class="new-input" type="text">
                 </div>
             </div>
-
+        </div>
         <!--Personal Goals-->
-
-        <div class="content-card col s12 l3">
-            <div class="card-top">
-                <div class="content-card-header">
-                    <input class="list-title" value="Personal Goals" readonly></input>
+        <div class="col m12 s12 l4">
+            <div class="card hoverable">
+                <div class="card-top">
+                    <div class="content-card-header">
+                        <input class="list-title" value="Personal Goals" readonly></input>
+                    </div>
+                    <ul class="list2">
+                        <li class="no-items2">Looks like you're all done!</li>
+                    </ul>
                 </div>
-                <ul class="list">
-                    <li class="no-items">Looks like you're all done!</li>
-                </ul>
-            </div>
-            <div class="card-bottom">
-                <input class="new-input" type="text">
+                <div class="card-bottom">
+                    <input class="new-input2" type="text">
+                </div>
             </div>
         </div>
-
         <!--Professional Goals-->
-
-        <div class="content-card col s12 l3">
-            <div class="card-top">
-                <div class="content-card-header">
-                    <input class="list-title" value="Professional Goals" readonly></input>
+        <div class="col m12 s12 l4">
+            <div class="card hoverable">
+                <div class="card-top">
+                    <div class="content-card-header">
+                        <input class="list-title" value="Professional Goals" readonly></input>
+                    </div>
+                    <ul class="list3">
+                        <li class="no-items3">Looks like you're all done!</li>
+                    </ul>
                 </div>
-                <ul class="list">
-                    <li class="no-items">Looks like you're all done!</li>
-                </ul>
+                <div class="card-bottom">
+                    <input class="new-input3" type="text">
+                </div>
             </div>
-            <div class="card-bottom">
-                <input class="new-input" type="text">
-            </div>
-        </div>
+        </div>    
     </div>
 
     

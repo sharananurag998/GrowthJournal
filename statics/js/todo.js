@@ -23,7 +23,7 @@ list.onclick = ev => {
     ev.target.parentElement.parentElement.classList.add('shrink');
     setTimeout(function(){
       ev.target.parentElement.parentElement.remove();
-    }, 250);
+    }, 250);      
   } else if(ev.target.tagName === 'path'){
     ev.target.parentElement.parentElement.parentElement.classList.add('shrink');
     setTimeout(function(){
